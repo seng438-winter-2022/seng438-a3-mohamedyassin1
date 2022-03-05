@@ -15,12 +15,28 @@
 
 This lab introduces the fundamentals of testing coverage, which includes method, statement, and condition coverages. It is also an introduction to white-box testing as we will actively use interact with the code to improve coverage and better our tests. Throughout this lab, we will improve our tests from the previous labs by increasing their overall coverage, meaning we can test a bigger range of possibilities in the code. 
 
-# 2 Manual data-flow coverage calculations for X and Y methods
-
-
+# 2 Manual data-flow coverage calculations for DataUtilities.calculateColumnTotal and Range.getUpperBound methods
+**Data Flow Graphs:**</br>
+</br>
+DataUtilities.calculateColumnTotal
 
 ![image](https://user-images.githubusercontent.com/73013959/156868378-f7663e0c-9e22-4a76-9d17-0dc24d22b8c1.png)
 
+Range.getUpperBound
+![image](https://user-images.githubusercontent.com/73013959/156869360-b1a29470-2c71-4f67-977f-c0a370e41835.png)
+
+
+**Def-use sets per statement**</br>
+</br>
+![image](https://user-images.githubusercontent.com/73013959/156869234-23a7375d-56fc-4222-bb2b-336f41b3d307.png)
+
+
+
+![image](https://user-images.githubusercontent.com/73013959/156869241-86f75111-18a7-40a6-97ce-59fe5abfdc18.png)
+
+
+
+For Range.getUpperBound(), there are no DU-pairs per variable, as the only variable is this.upper and it is not defined in getUpperBound(), thus we cannot calculate the DU-pair coverage and the test cases would not cover any DU pairs.
 <table>
   <tr>
    <td><strong>Variable</strong>
