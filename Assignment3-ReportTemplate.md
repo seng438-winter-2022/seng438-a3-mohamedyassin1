@@ -482,7 +482,7 @@ Before:
 
 ![image](https://user-images.githubusercontent.com/73013959/156868612-d608b94e-dbb3-494c-aeb1-9d75e958910d.png)
 
-After:
+After, as you can see, we meet the minimum coverage requirements, and we have replaced condition with method coverage:
 
 ![image](https://user-images.githubusercontent.com/73013959/156868618-8c1c2125-fdf7-49b0-baed-aa44e2e29f67.png)
 
